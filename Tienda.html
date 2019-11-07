@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <title>Carousel Template for Bootstrap</title>
+  </head>
+  <body>
+
+    <header>
+     <!--Elementos de navegacion -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!--Titulo/Logo/Nombre Empresa -->
+        <a class="navbar-brand" href="#">Zapatazo</a>
+         <!-- Fin Titulo/Logo/Nombre Empresa -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">     
+          <ul class="navbar-nav mr-auto">
+              
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+        <!--Fin Elementos de navegacion -->
+    </header>
+
+    <main role="main">
+      <br />
+      <br />
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <table class="table col-lg-4 offset-lg-4 col-md-6 offset-md-3
+          col-12">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>aaaa</td>
+                <td>aaaa</td>
+                <td><img  class="img-fluid mx-auto d-block rounded" src="data:image/jpeg;base64,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"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>bbbbbbb</td>
+                <td>bbbbbbbb</td>
+                 <td><img  class="img-fluid mx-auto d-block rounded" src="https://vikings.help/users/vikings/imgExtCatalog/big/m273.png"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>bbbbb</td>
+                <td>bbbbbbbb</td>
+                <td><img  class="img-fluid mx-auto d-block rounded" src="https://es.louisvuitton.com/images/is/image/lv/1/PP_VP_AS/louis-vuitton--AB5R2JPT06_PM2_Front%20view.jpg?wid=256&hei=256"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+       
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
